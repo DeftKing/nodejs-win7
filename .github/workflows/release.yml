@@ -1,0 +1,23 @@
+name: CreateRelease 
+
+on:
+  push:
+    tags:
+      - 'v*'  
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          lfs: 'true'  
+
+      - name: 
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            node-22.22.3/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
