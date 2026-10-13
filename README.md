@@ -1,2 +1,2 @@
 # nodejs-win7
-Prebuilt binaries of modern Node.js JavaScript runtime for Windows 7 
+Prebuilt binaries of modern Node.js JavaScript runtime for Windows 7-11
